@@ -1,0 +1,43 @@
+.profileContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax 0px;
+}
+
+img.profile__img {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 3px solid #2A4E45;
+}
+.edit__profile{
+    color: #587156;
+    font-family: "montserrat";
+    width: 100%;
+    text-align: end;
+    padding: .5vmax 0px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.info {
+    display: flex;
+    padding: 5px 0px;
+}
+.change__info {
+    display: flex;
+    flex-direction: column;
+    padding: 2vmax 0;
+}
+a.settings {
+    color: #97b693f8;
+    font-family: 'montserrat';
+    font-weight: 600;
+}

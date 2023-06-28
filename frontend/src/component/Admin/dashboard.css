@@ -1,0 +1,185 @@
+.dashboard {
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: absolute;
+  background-color: #FAF0E4;
+  
+}
+
+.dashboardContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  /* background-color:  #fcfcfcf0; */
+  padding: 1rem 0;
+ 
+
+}
+
+.dashboardContainer > h1 {
+  color: rgba(0, 0, 0, 0.733);
+  font: 300 2rem "montserrat";
+  text-align: center;
+  width: 50%;
+  padding: 1.5rem;
+  margin: auto;
+  margin-bottom: -2%;
+  margin-top: -1%;
+}
+
+.dashboardSummary {
+  margin: 2rem 0;
+}
+
+.dashboardSummary > div {
+  display: flex;
+  /* background-color:  #ffffff; */
+  justify-content: center;
+  margin:20px;
+  padding: 1.5rem;
+  
+}
+.dashboardSummary > div > p {
+  background-color: #025464;
+  color: #000;
+   border-radius:5px;
+  font: 300 1rem "montserrat";
+  text-align: right;
+  padding: 2rem;
+  width: 88%;
+  margin: 0 2rem;
+}
+
+.dashboardSummaryBox2 > a {
+  color: rgb(0, 0, 0);
+  font: 300 1.5rem "montserrat";
+  text-align: center;
+  background-color: #2C3333;
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 15vmax;
+  height: 7vmax;
+  margin: 1rem;
+  border-radius: 5px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 5px 8px 0px #2A4E45;
+}
+
+.dashboardSummaryBox2 > a:first-child {
+  background-color: #377D71;
+  color: #000;
+}
+
+.dashboardSummaryBox2 > a:last-child {
+  background-color: #7D9D9C;
+  color: rgb(0, 0, 0);
+}
+
+
+.doughnutChart {
+  width: 13.5vmax;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.salesPerDayChart{
+  width: 40vmax;
+  margin: 5% 0% 2% 10%;
+}
+
+.lineChart{
+  width: 38vmax;
+  margin: 3% 0% 0% 15%;
+}
+
+.ratingChartData{
+  width: 40vmax;
+  margin-left: 35%;
+}
+
+.pieChart{
+  width:15vmax;
+  height:15%;
+  margin-left: 10%;
+  padding-bottom: -15%;
+}
+
+.pieChart1{
+  width: 20vmax;
+  margin-left: 11%;
+  padding-bottom: 4%;
+}
+.pieChart2{
+  width: 20vmax;
+  margin-left: 15%;
+  padding-bottom: 4%;
+}
+
+.ratingChart{
+  width: 20vmax;
+  margin-left: 10%;
+}
+
+.barChart1{
+width: 30vmax;
+}
+
+.graphtext{
+font-weight: bolder;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Increase the gap between items */
+  margin-left: 25px;
+  margin-right: 35px;
+ padding:0.8rem;
+}
+
+.grid-item {
+  flex: 0 0 calc(50% - 15px); /* Adjust the width and spacing as needed */
+  border-radius: 8px;
+  background-color: #d5dcdc;
+  padding: 5px;
+  box-shadow:0px 5px 8px 0px #2A4E45 ;
+}
+
+.dashboardnav{
+  background-color: #97b69399;
+  position: fixed;
+  top: 0;
+  left: 17%;
+  width: 85%;
+  height: 8%;
+  z-index: 100;
+}
+
+/* .navicon{
+  background: #2A4E45;
+  background-size: 5%;
+} */
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+
+  .dashboardSummary > div > p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2 > a {
+    padding: 50rem;
+    margin: 2px;
+    font: 300 0.9rem 'montserrat';
+  }
+}

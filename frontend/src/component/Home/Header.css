@@ -1,0 +1,30 @@
+.inputBox > span{
+  font-family: "montserrat";
+  animation: sliding 14s linear infinite;
+  display: block;
+}
+@keyframes sliding{
+  0%{
+    transform: translateX(-70%);
+  }
+  100%{
+    transform: translateX(130%);
+  }
+}
+
+.logo{
+
+height: 80px;
+width:80px;
+}
+
+.navigation ul {
+display: grid;
+grid-template-columns: repeat(5, auto);
+justify-content: center;
+gap: 20px;
+}
+
+.navigation ul li {
+display: inline-block;
+}

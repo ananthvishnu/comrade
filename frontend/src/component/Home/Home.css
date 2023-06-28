@@ -1,0 +1,350 @@
+
+*{
+  font-family:'montserrat';
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+ 
+  
+  background-image: url('../../Assets/banner-bg.png');
+  background-size: cover;
+  
+ 
+}
+.bgImg {
+  width: 50%;
+  height: 100vh;
+  object-fit:contain;
+  margin-left: 10%;
+}
+.home__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  display: block;
+  margin-top: 20%;
+  margin-right:10% ;
+  /* width: 100vh; */
+  margin-top: 190px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  
+}
+button.Home__button {
+  padding: 15px 20px;
+  background-color: rgb(151,37,43);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.homeHeading {
+  text-align: center;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  font-size: 1.4vmax;
+  margin: 0.5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+
+
+.gridItem1{
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+.prductgridsub{
+  margin-top: 4%;
+ 
+}
+
+
+.productimg{
+  width:40px;
+  height: 40px;
+  margin-left: 2px;
+  margin-bottom: -10px;
+}
+
+h1.discountPrice {
+  font-size: 1vmax;
+  text-decoration:line-through;
+  padding-left: 10px;
+}
+.ProductCard {
+  width: 14vmax;
+  height: 22vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+img.ProductImg {
+  width: 14vmax;
+}
+.ProductCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+}
+.ProductCard > div > span {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "montserrat";
+}
+.productName {
+  font-family: "montserrat";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  color: #000;
+  margin-bottom: 0;
+}
+.ProductCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 1vmax;
+}
+.ProductCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+
+/*Team css */
+.team{
+  overflow: visible !important;
+} 
+
+.container3  {
+  position:relative;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 1400px;
+  background: #f2f2f2;
+  /* overflow: hidden; */
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.content3 {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+  margin-left: 600px;
+
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+ .flap3 {
+  width: 100%;
+  height: 100%;
+}
+
+.flap3::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.flap3::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+} 
+
+.container3:hover .flap3::after {
+  transform: translatex(700px);
+}
+
+.container3:hover .flap3::before{
+  transform: translatex(-700px);
+} 
+
+/* team css end*/
+
+@media screen and (max-width: 600px) {
+  .ProductCard > p {
+    font-size: 1.7vmax;
+  }
+  .ProductCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+  .ProductCard > span {
+    font-size: 1.5vmax;
+  }
+  .ProductCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "montserrat";
+  }
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url('../../Assets/banner-bg.png');
+  
+}
+.bgImg {
+  width: 50%;
+  height: 100vh;
+  object-fit: contain;
+  margin-left: 45%;
+ 
+}
+.home__content {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 20% !important;
+  display: block;
+  width: 100vh !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 30%;
+}
+button.Home__button {
+  padding: 15px 20px;
+  background-color:  rgb(151,37,43);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.homeHeading1 {
+  text-align: center;
+  width: 20vmax;
+  padding: 1vmax;
+  font-size: 1.4vmax;
+  margin: 0.4vmax auto;
+  margin-bottom: -30px;
+  
+}
+
+.homeHeading {
+  text-align: center;
+  width: 20vmax;
+  padding: 1vmax;
+  font-size: 1.4vmax;
+  margin: 0.5vmax auto;
+  color: #2A4E45;
+}
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.ProductCard {
+  width: 15vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  background-color: #fffbfbed;
+}
+
+.homecontact{
+  background-color: #2A4E45;
+  padding: 4%;
+  margin-bottom: 5%;
+  background-image: url('../../Assets/leaf2.png');
+  background-repeat: no-repeat;
+  background-position:right;
+background-size: auto;
+}
+
+img.ProductImg {
+  width: 14vmax;
+  height: 13vmax;
+  object-fit: contain;
+ 
+}
+.ProductCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+}
+.ProductCard > div > span {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "montserrat";
+}
+.productName {
+  font-family: "montserrat";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  color: #000;
+  margin-bottom: 0;
+}
+.ProductCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 1vmax;
+}
+.ProductCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+}
+@media screen and (max-width: 600px) {
+  .ProductCard > p {
+    font-size: 1.7vmax;
+  }
+  .ProductCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+  .ProductCard > span {
+    font-size: 1.5vmax;
+  }
+  .ProductCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "montserrat";
+  }
+}
