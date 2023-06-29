@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import {  useDispatch,useSelector } from "react-redux";
-import logo from "../../Assets/Black Pearl Logo/10.png";
+import logo from "../../Assets/10.png";
 import "@fontsource/montserrat";
 //logOut
 import { toast } from 'react-toastify';

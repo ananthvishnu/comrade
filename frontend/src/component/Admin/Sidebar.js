@@ -9,7 +9,7 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import RateReviewOutlinedIcon from "@mui/icons-material/RateReviewOutlined";
-import logo from "../../Assets/Black Pearl Logo/10.png";
+import logo from "../../Assets/10.png";
 import { margin } from "@mui/system";
 import BookIcon from "@mui/icons-material/Book";
 import NotesIcon from "@mui/icons-material/Notes";

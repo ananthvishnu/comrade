@@ -15,7 +15,7 @@ import { DELETE_REPORT_RESET } from "../../constans/ReportConstans";
 import { ToastContainer, toast } from "react-toastify";
 import MetaData from "../../more/Metadata";
 import Sidebar from "../Admin/Sidebar";
-import logo from "/home/ukijaffna/Videos/COMRADE/frontend/src/Assets/Black Pearl Logo/10.png"
+import logo from "../../Assets/10.png"
 import "./ReportList.css";
 
 const ReportList = () => {
